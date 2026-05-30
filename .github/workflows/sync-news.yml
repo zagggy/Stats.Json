@@ -2,15 +2,15 @@ name: Sync RSS News to Grafana Dashboard
 
 on:
   schedule:
-    - cron: '0 6 * * *' # Automatically runs every single morning at 6:00 AM UTC
-  workflow_dispatch: # Gives you a manual button to run it whenever you want
+    - cron: '0 6 * * *' 
+  workflow_dispatch: 
 
 jobs:
   update-dashboard:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: write # Allows GitHub to save the data back into your repository
+      contents: write 
 
     steps:
     - name: Checkout Repository Code
@@ -33,7 +33,7 @@ jobs:
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
         # Tracks your dashboard file for changes.
-        git add stat.json
+        git add plumbing_stats.json
         
         if git diff-index --quiet HEAD --; then
           echo "No new articles found. Skipping repository push."
