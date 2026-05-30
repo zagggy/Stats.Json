@@ -32,8 +32,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
         
-        # Tracks your dashboard file for changes.
-        git add plumbing_stats.json
+        git add plumbing_stats.json plumbing_news.json
         
         if git diff-index --quiet HEAD --; then
           echo "No new articles found. Skipping repository push."
@@ -41,12 +40,3 @@ jobs:
           git commit -m "chore: automated refresh of industry rss news feed"
           git push
         fi
-        - name: Push Consolidated Dashboard to Grafana API
-      run: |
-        echo "{\"dashboard\": $(cat dashboards/my_dashboard.json), \"overwrite\": true}" > payload.json
-        
-        curl -X POST \
-          -H "Authorization: Bearer ${{ secrets.GRAFANA_TOKEN }}" \
-          -H "Content-Type: application/json" \
-          -d @payload.json \
-          https://grafana.yourcompany.com/api/dashboards/db
