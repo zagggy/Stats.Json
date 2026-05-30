@@ -33,7 +33,7 @@ def fetch_and_inject():
         markdown_content += f" * [{title}]({link})\n"
 
     # 3. Target your dashboard file.
-    dashboard_path = "stat.json" 
+    dashboard_path = "plumbing_stats.json" 
 
     if not os.path.exists(dashboard_path):
         print(f"Error: Dashboard file not found at {dashboard_path}")
