@@ -1,0 +1,43 @@
+name: Sync RSS News to Grafana Dashboard
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Automatically runs every single morning at 6:00 AM UTC
+  workflow_dispatch: # Gives you a manual button to run it whenever you want
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write # Allows GitHub to save the data back into your repository
+
+    steps:
+    - name: Checkout Repository Code
+      uses: actions/checkout@v4
+
+    - name: Configure Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.10'
+
+    - name: Install Dependencies
+      run: pip install requests
+
+    - name: Run Extraction and Injection Script
+      run: python update_news.py
+
+    - name: Commit and Push Updated Dashboard
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        
+        # Tracks your dashboard file for changes.
+        git add stat.json
+        
+        if git diff-index --quiet HEAD --; then
+          echo "No new articles found. Skipping repository push."
+        else
+          git commit -m "chore: automated refresh of industry rss news feed"
+          git push
+        fi
