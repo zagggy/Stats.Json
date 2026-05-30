@@ -1,7 +1,32 @@
 [
-  { "Week": "Week 1", "Progress": 75000 },
-  { "Week": "Week 2", "Progress": 76250 },
-  { "Week": "Week 3", "Progress": 77500 },
-  { "Week": "Week 4", "Progress": 78750 },
-  { "Week": "Week 5", "Progress": 80000 }
+  {
+    "Week": "Week 1",
+    "Progress": 75000
+  },
+  {
+    "Week": "Week 2",
+    "Progress": 76250
+  },
+  {
+    "Week": "Week 3",
+    "Progress": 77500
+  },
+  {
+    "Week": "Week 4",
+    "Progress": 78750
+  },
+  {
+    "Week": "Week 5",
+    "Progress": 80000
+  },
+  {
+    "Industry_News": "Latest Updates",
+    "Articles": [
+      "Q&A with Plumbing-Heating-Cooling Contractors of Louisiana President Trey Giglio and Executive Director Crystal Carter - PHCPPros - https://news.google.com/rss/articles/CBMi9AFBVV95cUxOaXhIakpyb3IzdmlVN1VIcEZ3U0ZQV1VxTkh0elRwMWFoTnlza2k3ZEhFaV8taUNscHNWY2ViMDlTUVlkdGQ1U3dFOWdKWEpTb2l4cktYSnVHNXRrOU95U2dQOGVsQllVR0JWVzhHMV81ejd4cVlEZ296NnRJUkN6ajQ4aTRGUG80cWozMHZzVl9nQmdTVGFzTVZFaFRiMlppVWI3ZHFGUm1IOUpjMmlMclRUUzRmRzNrMld6YjZ1MDBHT2JPUWwxNlFDb0Ywb2VOMC1zNEx5WFBQLWNXQnNvR0FtMGxhRXh2cENnRXBpVHBpeGdM?oc=5",
+      "Firm partners APPN to raise standards in plumbing sector - Business News Nigeria - https://news.google.com/rss/articles/CBMiowFBVV95cUxOeUtTaVhpc3Nxd0YzVVNsdmJkbllyNVBwcmY3cm9OVmI1by1sNERub2c1RHZIVWpXaG9CSGlSZmJZNjU2M1dfbFp6VEowV2JzY0hINUNCMGZndnJLb1R3bnNzN2VkaWxMSzlCajBod2JkUi0wVHpZQ2VRZW1rTEphTkV0MlF1M3lpVGpPRU5OdWxVNnVHdE15T0JQbDdkdDJZZVpN?oc=5",
+      "Plumbing industry, government officials collaborate to prevent next Legionnaires\u2019 disease outbreak - Crain's New York - https://news.google.com/rss/articles/CBMi3gFBVV95cUxQTGJzUm91bVZZeEVCSldHaVhCbkVsQkJSSE5yb3Q0NUhqSDM3X3ZnRlpDaFd4SG1TdldSRDJwb3JoSHhkdWxNT002UEVmcXFwWW4tSVhEWFlZaFdSeDRudUFOclAtdVcxU1k4bnRqVVdEbmFobHczZk54ODdMN2ZjRW9Xd2NpR1A0YVhRRkVYblNzbXFCem05bWZUUnMzRGFzN3BhVGJtY1FGbUltQ1pzMlVhakpUWHZaNzBUc2NWYmFKYlZkUXpjSTVJd01uOUU0a2hhNjZBOVZPYmR2NHc?oc=5",
+      "Meet the Contractor: Brandon Anderson, Morris-Jenkins - Homepros - https://news.google.com/rss/articles/CBMif0FVX3lxTE9zUXZtZThCeko1WUUzRC1OYzVybVR3b29TdE94VTdGSkZOZFpnWTdmbjNJV25PRmtuWlRXX2dmRGloa1RUS3g3NjF1c0h1RWRab1BybkpzTUJidWhZTUxZS2xubTNoTUo2aGhvREg2ZkxleG1qRjlLWVVucFlCam8?oc=5",
+      "Opportunity through disruption: 2026 Plumbing Industry Outlook - Supply House Times - https://news.google.com/rss/articles/CBMipAFBVV95cUxNbFpQdnhsdVJVRTA3dG1HSFNRV2U0YVZhY3JuRWtTcXNLQlhxbERyamozdUtfWXlEREpZQkdfaWw2RGlJSXNzRnZldVRDemEwaS16ZjY5d0RnR1gyX2Vhd2lyTHpFRDRnQy1sREFZcFJBVHJjM2VCdWhNRUVlXzBoVWtqbG9mYXNYN2ZkSFpKVjdUeUg5TkJJTTdMZmY4eTQyUUtxUw?oc=5"
+    ]
+  }
 ]
