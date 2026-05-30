@@ -41,3 +41,12 @@ jobs:
           git commit -m "chore: automated refresh of industry rss news feed"
           git push
         fi
+        - name: Push Consolidated Dashboard to Grafana API
+      run: |
+        echo "{\"dashboard\": $(cat dashboards/my_dashboard.json), \"overwrite\": true}" > payload.json
+        
+        curl -X POST \
+          -H "Authorization: Bearer ${{ secrets.GRAFANA_TOKEN }}" \
+          -H "Content-Type: application/json" \
+          -d @payload.json \
+          https://grafana.yourcompany.com/api/dashboards/db
